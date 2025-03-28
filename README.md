@@ -2,6 +2,8 @@
 
 - CRA
 - Configured TailwindCSS
+- Header
+- Login Form
 
 # Features:
 
