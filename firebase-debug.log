@@ -1,0 +1,162 @@
+[debug] [2025-08-15T18:49:43.699Z] ----------------------------------------------------------------------
+[debug] [2025-08-15T18:49:43.703Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sanket\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-08-15T18:49:43.703Z] CLI Version:   14.0.1
+[debug] [2025-08-15T18:49:43.703Z] Platform:      win32
+[debug] [2025-08-15T18:49:43.703Z] Node Version:  v22.14.0
+[debug] [2025-08-15T18:49:43.704Z] Time:          Sat Aug 16 2025 00:19:43 GMT+0530 (India Standard Time)
+[debug] [2025-08-15T18:49:43.704Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-15T18:49:43.708Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-08-15T18:49:43.993Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-15T18:49:43.994Z] > authorizing via signed-in user (sanketpatil9902@gmail.com)
+[debug] [2025-08-15T18:49:43.994Z] [iam] checking project netflixgpt-f95c4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-15T18:49:43.994Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:49:43.995Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:49:43.995Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:49:43.996Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:49:43.996Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:49:44.139Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:49:44.140Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:49:44.140Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions [none]
+[debug] [2025-08-15T18:49:44.140Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions x-goog-quota-user=projects/netflixgpt-f95c4
+[debug] [2025-08-15T18:49:44.140Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-15T18:49:44.605Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-08-15T18:49:44.606Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-08-15T18:49:45.558Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions 401
+[debug] [2025-08-15T18:49:45.558Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2025-08-15T18:49:45.558Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-08-15T18:49:45.558Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:49:45.559Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:49:45.559Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:49:45.559Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:49:45.560Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:49:45.646Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:49:45.646Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:49:45.648Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-08-15T18:49:45.649Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:49:45.649Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:49:45.650Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:49:45.650Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:49:45.650Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:49:45.736Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:49:45.736Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:49:45.737Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 [none]
+[debug] [2025-08-15T18:49:45.898Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 401
+[debug] [2025-08-15T18:49:45.899Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-08-15T18:49:45.899Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-08-15T18:49:45.899Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:49:45.899Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:49:45.899Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:49:45.900Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:49:45.900Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:49:45.989Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:49:45.989Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:49:45.990Z] Request to https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2025-08-15T18:56:07.377Z] ----------------------------------------------------------------------
+[debug] [2025-08-15T18:56:07.380Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sanket\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-08-15T18:56:07.380Z] CLI Version:   14.0.1
+[debug] [2025-08-15T18:56:07.381Z] Platform:      win32
+[debug] [2025-08-15T18:56:07.381Z] Node Version:  v22.14.0
+[debug] [2025-08-15T18:56:07.381Z] Time:          Sat Aug 16 2025 00:26:07 GMT+0530 (India Standard Time)
+[debug] [2025-08-15T18:56:07.381Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-15T18:56:07.610Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-15T18:56:07.611Z] > authorizing via signed-in user (sanketpatil9902@gmail.com)
+[debug] [2025-08-15T18:56:07.611Z] [iam] checking project netflixgpt-f95c4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-15T18:56:07.612Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:56:07.612Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:56:07.613Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:56:07.614Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:56:07.615Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:56:07.818Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:56:07.818Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:56:07.818Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions [none]
+[debug] [2025-08-15T18:56:07.818Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions x-goog-quota-user=projects/netflixgpt-f95c4
+[debug] [2025-08-15T18:56:07.818Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-15T18:56:09.188Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions 401
+[debug] [2025-08-15T18:56:09.188Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2025-08-15T18:56:09.189Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-08-15T18:56:09.189Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:56:09.189Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:56:09.190Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:56:09.191Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:56:09.191Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:56:09.286Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:56:09.287Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:56:09.290Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-08-15T18:56:09.293Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:56:09.293Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:56:09.293Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:56:09.294Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:56:09.295Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:56:09.446Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:56:09.446Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:56:09.448Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 [none]
+[debug] [2025-08-15T18:56:09.876Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 401
+[debug] [2025-08-15T18:56:09.876Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-08-15T18:56:09.877Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-08-15T18:56:09.877Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:56:09.877Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:56:09.877Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:56:09.878Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:56:09.878Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:56:09.974Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:56:09.974Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:56:09.977Z] Request to https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2025-08-15T18:58:15.363Z] ----------------------------------------------------------------------
+[debug] [2025-08-15T18:58:15.369Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sanket\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-08-15T18:58:15.370Z] CLI Version:   14.12.1
+[debug] [2025-08-15T18:58:15.370Z] Platform:      win32
+[debug] [2025-08-15T18:58:15.370Z] Node Version:  v22.14.0
+[debug] [2025-08-15T18:58:15.371Z] Time:          Sat Aug 16 2025 00:28:15 GMT+0530 (India Standard Time)
+[debug] [2025-08-15T18:58:15.371Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-15T18:58:15.909Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-15T18:58:15.910Z] > authorizing via signed-in user (sanketpatil9902@gmail.com)
+[debug] [2025-08-15T18:58:15.910Z] [iam] checking project netflixgpt-f95c4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-15T18:58:15.913Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:58:15.913Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:58:15.914Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:58:15.919Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:58:15.919Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:58:16.182Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:58:16.182Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:58:16.183Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions [none]
+[debug] [2025-08-15T18:58:16.183Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions x-goog-quota-user=projects/netflixgpt-f95c4
+[debug] [2025-08-15T18:58:16.183Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-15T18:58:17.549Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions 401
+[debug] [2025-08-15T18:58:17.549Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2025-08-15T18:58:17.549Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-08-15T18:58:17.550Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:58:17.550Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:58:17.550Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:58:17.552Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:58:17.552Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:58:17.643Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:58:17.643Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:58:17.644Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f95c4:testIamPermissions had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-08-15T18:58:17.645Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:58:17.645Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:58:17.645Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:58:17.646Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:58:17.646Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:58:17.738Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:58:17.738Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:58:17.740Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 [none]
+[debug] [2025-08-15T18:58:18.154Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 401
+[debug] [2025-08-15T18:58:18.155Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-08-15T18:58:18.155Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-08-15T18:58:18.155Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:58:18.156Z] Checked if tokens are valid: false, expires at: 1743570322580
+[debug] [2025-08-15T18:58:18.156Z] > refreshing access token with scopes: []
+[debug] [2025-08-15T18:58:18.157Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-15T18:58:18.157Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:58:18.250Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-15T18:58:18.250Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-15T18:58:18.251Z] Request to https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f95c4 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
